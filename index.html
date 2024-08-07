@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Document</title>
+</head>
+<header>
+  <h1>Licores Icathi Sabatino</h1>
+</header>
+
+<body>
+  <table>
+    <tr>
+      <th>Tipo</th>
+      <th>% Alcohol</th>
+      <th>% Azucar</th>
+    </tr>
+    <tr>
+      <td>Extra seco</td>
+      <td>20 - 25%</td>
+      <td>0 - 12%</td>
+    </tr>
+    <tr>
+      <td>Seco</td>
+      <td>20 - 25%</td>
+      <td>12 - 20%</td>
+    </tr>
+    <tr>
+      <td>Dulce</td>
+      <td>25 - 30%</td>
+      <td>21 - 30%</td>
+    </tr>
+    <tr>
+      <td>Fino</td>
+      <td>30 - 35%</td>
+      <td>40 - 60%</td>
+    </tr>
+    <tr>
+      <td>Crema</td>
+      <td>35 - 40%</td>
+      <td>40 - 60%</td>
+    </tr>
+  </table>
+  <div class="container">
+    <!-- <p>Formula del alcohol</p> -->
+    <form>
+      <label for="cantidad-ml">Cantidad de licor total</label>
+      <input type="number" id="cantidad-ml" placeholder="Cantidad en mililitros" class="licor-total">
+      <label for="graduacion-alcoholica-inicial">Alcohol inicial</label>
+      <input type="number" id="graduacion-alcoholica-inicial" placeholder="Graduacion alcoholica"
+        class="alcohol-inicial">
+      <label for="graduacion-alcoholica-deseada">Alcohol deseado</label>
+      <input type="number" id="graduacion-alcoholica-deseada" placeholder="Graduacion alcoholica"
+        class="alcohol-deseado">
+      <!-- <p>Formula del azucar</p>
+    <label>Cantidad de licor total</label>
+    <input type="text" placeholder="Cantidad en mililitros"> -->
+      <label for="dulzor-deseado">Dulzor deseado</label>
+      <input type="number" id="dulzor-deseado" placeholder="Graduacion de azucar" class="dulzor-deseado">
+      <!-- <p>Azucar deseada</p>
+    <input type="text" placeholder="Porcentaje de azucar deseada"> -->
+      <label for="macerado">Macerado</label>
+      <input type="number" id="macerado" placeholder="Cantidad en mililitros" class="macerado">
+      <!-- <p>Para realizar el calculo por favor ingresa el valor del macerado</p> -->
+      <p>Por favor<span id="compensar"></span> ml de tu alcohol base al macerado</p>
+      <p>Por favor agrega <span id="azucar"></span> ml de jarabe</p>
+      <p>Por favor agrega <span id="agua"></span> ml de agua</p>
+    </form>
+    <button type="submit" class="calcular" onclick="calc()">Calcular</button>
+  </div>
+  <footer>
+    <h2>Pablo Meneses Armenta</h2>
+  </footer>
+</body>
+
+<script src="/script.js"></script>
+
+</html>
