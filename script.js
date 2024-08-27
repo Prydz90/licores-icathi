@@ -42,5 +42,7 @@ function calc(){
 
   agua=azucaryAgua-formula_azucar;
   document.getElementById("agua").innerText=agua.toFixed(2);
-  
+
+  document.getElementById("recomendaciones").style.visibility = 'visible';
+  document.getElementById("recomendaciones").style.display = 'block';
 }

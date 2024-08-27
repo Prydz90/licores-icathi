@@ -12,7 +12,7 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://licores-sabatino.surge.sh/"/>
+  <meta property="og:url" content="https://licores-sabatino.surge.sh/" />
   <meta property="og:title" content="Curso licores sabatino" />
   <meta property="og:description" content="Formulas para el curso sabatino de licores" />
   <meta property="og:image" content="https://licores-sabatino.surge.sh/assets/images/licores-artesanales.webp" />
@@ -85,9 +85,11 @@
       <label for="macerado">Macerado</label>
       <input type="number" id="macerado" placeholder="Cantidad en mililitros" class="macerado">
       <!-- <p>Para realizar el calculo por favor ingresa el valor del macerado</p> -->
-      <p>Por favor<span id="compensar"></span> ml de tu alcohol base al macerado</p>
-      <p>Por favor agrega <span id="azucar"></span> ml de jarabe</p>
-      <p>Por favor agrega <span id="agua"></span> ml de agua</p>
+      <div id="recomendaciones">
+        <p>Por favor<span id="compensar"></span> ml de tu alcohol base al macerado</p>
+        <p>Por favor agrega <span id="azucar"></span> ml de jarabe</p>
+        <p>Por favor agrega <span id="agua"></span> ml de agua</p>
+      </div>
     </form>
     <button type="submit" class="calcular" onclick="calc()">Calcular</button>
   </div>

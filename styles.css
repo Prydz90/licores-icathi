@@ -66,9 +66,16 @@ input{
   padding: 4px;
 }
 
+#recomendaciones{
+  /* visibility:hidden; */
+  display: none;
+}
+
 p{
   margin-bottom: 20px;
 }
+
+
 
 .calcular{
   margin: 0 auto;
