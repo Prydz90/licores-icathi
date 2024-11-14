@@ -31,9 +31,11 @@ function calc(){
   if(formula_alcohol>=macerado){
   
   console.log("Por favor agrega: ",alcoholParaCompensar," de alcohol");
-  document.getElementById("compensar").innerText=` agrega ${alcoholParaCompensar.toFixed(2)}`;
+
+  document.getElementById("compensar").innerText=`Por favor agrega ${alcoholParaCompensar.toFixed(2)} ml de tu alcohol base al macerado`;
   }else{
-    document.getElementById("compensar").innerText=` retira ${(alcoholParaCompensar*-1).toFixed(2)}`;
+    document.getElementById("compensar").innerText=`Por favor retira ${(alcoholParaCompensar*-1).toFixed(2)} ml de tu macerado o sube tu graduacion alcoholica deseada`;
+    document.getElementById("compensar").style.color = '#ca0b00';
   }
   azucaryAgua=licorTotal-formula_alcohol;
   console.log("La cantidad de azucar y agua es", azucaryAgua);
